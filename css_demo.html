@@ -6,7 +6,7 @@
 <style>/* Stylesheet 1: */
 body {
     font: 100% Lucida Sans, Verdana;
-    margin: 20px;
+    margin: 25px;
     line-height: 26px;
 }
 
@@ -25,7 +25,7 @@ body {
 }
 
 #top {
-    background-color: #4CAF50;
+    background-color: #9900CC;
     color: #ffffff;
     padding: 15px;
 }
@@ -41,14 +41,17 @@ body {
 }
 
 #sidebar {
-    background-color: #32a4e7;
-    color: #ffffff;
+    background-color: #FFFF66;
+    color: #000000;
     padding: 10px;
-    width: 180px;
+    width: 200px;
     bottom: 0;
     top: 0;
     right: 0;
     position: absolute;
+	border: medium #9900CC;
+	border-style: outset;
+	border-radius: 10px;
 }
 
 #bottom {
@@ -66,7 +69,7 @@ body {
 }
 
 .menuitem {
-    background-color: #f1f1f1;
+    background-color: #FFFFCC;
     border: 1px solid #d4d4d4;
     list-style-type: none;
     padding: 2px;
@@ -78,7 +81,7 @@ body {
 }
 
 .menuitem:first-child {
-    background-color:#4CAF50;
+    background-color:#9900CC;
 	color: white;
 	font-weight:bold;
 }
@@ -113,12 +116,47 @@ a:hover {
         margin: 0;
     }    
 }
+h1{
+   text-shadow: 1.6px 2.6px #000000
+  
+}
+h2{
+   color: #9900CC;
+   text-shadow: 1.4px 2.4px #333333;
+   font-size: 30px;
+}
+.button {
+	margin-top: 45px;
+    margin-bottom: 45px;
+	display: block;
+	border: medium #9900CC;
+	border-style: outset;
+	border-radius: 6px;	
+	background: linear-gradient(90deg, #9900CC, #FFFF66);
+    font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	color: white;
+	padding: 10px 5px;
+	width: 180px;
+	cursor: pointer;
+	text-decoration: none;
+}
+.button:hover {
+    background: linear-gradient(90deg, #0000FF, #FFFF66);
+    color:white
+}
+.marco {
+	
+	border-radius: 10px;	
+}	
 </style>
 
 <style>/* Stylesheet 2: */
 body {
     font-family: Arial;
-    background-color: #d14836;
+    background-color: #FD173A;
     line-height: 20px;
 }
 
@@ -135,7 +173,7 @@ body {
     color: #ffffff;
     padding: 15px;
     font-size: 30px;
-    line-height: 26px;    
+    line-height: 10px;    
 }
 
 #top h1 {
@@ -149,44 +187,60 @@ body {
 }
 
 #main {
-    padding: 10px;
+    padding: 15px;
     background-color: #ffffff;
-    font: 80% Verdana;
+    font: 115% Verdana;
+
 }
 
 #main h1, #main h2 {
     color: #d14836;
 }
 
-#sidebar {
-    background-color: #F6DAD7;
-    color: #d14836;
-    padding: 10px;
-}
 
+#sidebar {
+    background-color: #FFFFFF;
+    color: #d14836;
+    justify-content:center;
+	width: 180px;
+    bottom: 0;    
+	position: absolute;
+	height:52%;
+	display: block;
+	right: 0px;
+	
+	
+  }
+  
+ 
 #bottom {
     text-align: center;
     padding: 10px;
     font-size: 70%;
     color: #ffffff;
+	height: 20%;
 }
 
 #menulist {
     padding:0;
     font: 16px verdana;
+	
 }
 
 .menuitem {
     width: 155px;
-    background-color: #d14836;
-    border: 1px solid #d14836;
-    border-radius: 40px;
+    background: linear-gradient(90deg, #FD173A, #FFFF66);
+    border: medium #d14836;
+	border-style: outset;
+	font-weight: bold;
+	border-radius: 20px;
     color: #ffffff;
     list-style-type: none;
     margin: 10px;
     padding: 5px;
     text-align: center;
     cursor: pointer;
+	
 }
 
 .menuitem:nth-child(2) {
@@ -196,7 +250,8 @@ body {
 }
 
 .menuitem:hover {
-    background-color: #ffffff;
+      
+	background: linear-gradient(90deg, #09DA48, #FFFF66);
     color: #d14836;
 }
 
@@ -208,6 +263,48 @@ a {
 a:hover {
     text-decoration: underline;
 }
+h1{
+   text-shadow: 1.6px 2.6px #000000
+  
+}
+h2{
+   color: #9900CC;
+   text-shadow: 1.4px 2.4px #333333;
+   font-size: 30px;
+}
+.button {
+	margin-top: 10px;
+    margin-bottom: 10px;
+	display: block;
+	border: medium #d14836;
+	border-style: outset;
+	border-radius: 20px;	
+	background: linear-gradient(90deg, #FD173A, #FFFF66);  
+	font: 16px verdana;	
+	font-weight: bold;
+	text-align: center;
+	color: white;
+	padding: 6px 5px;
+	width: 150px;
+	cursor: pointer;
+	text-decoration: none;
+	
+}
+.button:hover {
+    background: linear-gradient(90deg, #09DA48, #FFFF66);
+    color:white;
+	text-decoration: none;
+}
+#imagen{
+        weight: 70px;
+		height: 70px;
+		display:block;
+        margin:auto;
+}
+.marco {
+	border: 4px groove #FD173A;
+	border-radius: 25px;	
+}
 </style>
 
 <style>/* Stylesheet 3: */
@@ -215,6 +312,7 @@ body {
     font: 100% Verdana;
     margin: 20px;
     line-height: 26px;
+	background-color: #84c754;
 }
 
 .container {
@@ -224,12 +322,18 @@ body {
 .wrapper {
     position: relative;
     overflow: auto;
+	width: 900px;
+	margin:auto;
+	padding: 22px;
+	background-color: white;
 }
 
 #sidebar {
     background-color: #f1f1f1;
     border: 1px solid #d4d4d4;
     padding-left: 10px;
+    height: 40px;
+	width: 95%;
 }
 
 #bottom {
@@ -277,10 +381,44 @@ a {
 a:hover {
     color: #84c754;
 }
+#imagen {
+     
+   display: none;	 
+ } 
+ h1{
+   text-shadow: 1.6px 2.6px #000000;   
+   font-size: 35px;
+}
+h2{
+   text-shadow: 1.6px 2.6px #000000;
+   font-size: 30px;
+}
+.button {	
+	text-shadow: 1.2px 2.2px #000000;
+	background-color:#84c754;  
+	font: 16px verdana;	
+	font-weight: bold;
+	color: white;
+	text-decoration: none;	
+	width: 200px;
+    float: left;    
+    margin: 4.5px 28px;
+    padding: 4px;
+    text-align: center;
+    cursor: pointer;
+	
+}
+.button:hover {
+    background-color: #000000;
+    color:white;
+	text-decoration: none;
+}	
+	
+	
 </style>
 <style>/* Stylesheet 4: */
 body {
-    font: 100% Courier New;
+    font: 120% Courier New;
     margin: 20px;
     line-height: 26px;
     background-color: #000000;
@@ -297,18 +435,20 @@ body {
 
 #top {
     color: #84c754;
-    padding: 15px;
+    padding: 25px;
+	
 }
 
 #main {
     padding: 10px;
     color: #84c754;
+	
 }
 
 #sidebar {
     color: #ffffff;
-    border: 1px solid #ffffff;
-    border-radius: 4px;
+    border: 5px ridge #84c754;
+	border-radius: 10px;
     padding: 10px;
     width: 320px;
     top: 0;
@@ -330,12 +470,14 @@ body {
 
 #top h1,#top p {
     margin: 0;
+	
+
 }
 
 .menuitem {
     color: #84c754;
-    cursor: pointer;
-}
+    cursor: pointer;	
+	}
 
 .menuitem:nth-child(4) {
 	color:white;
@@ -360,6 +502,45 @@ a:hover {
         position: relative;
     }    
 }
+#imagen {
+     
+   display: none;	 
+ } 
+ h1{
+   text-shadow: 1.6px 2.6px #ffffff;   
+   font-size: 50px;
+   text-align: center;
+}
+h2{
+   text-shadow: 1.6px 2.6px #ffffff;
+   font-size: 30px;
+  
+}
+.button {	
+	text-shadow: 1.2px 2.2px #000000;
+	background-color:#84c754;  
+	font: 16px verdana;	
+	font-weight: bold;
+	color: white;
+	text-decoration: none;	
+	width: 220px;
+    float: left;    
+    margin: 4.5px 38px;
+    padding: 4px;
+    text-align: center;
+    cursor: pointer;
+	
+}
+.button:hover {
+    background-color: #000000;
+    color:white;
+	text-decoration: none;
+}	
+
+.marco {
+	border: 5px ridge #84c754;
+	border-radius: 10px;	
+}
 
 </style>
 
@@ -368,7 +549,8 @@ a:hover {
 
 <div class="container wrapper">
   <div id="top">
-    <h1>Bievenido a la página demostración IEDA</h1>
+    <h1>Bienvenido a la página demostración IEDA</h1>
+	<br>
 	<p>Usa el menú para seleccionar las distintas hojas de estilo</p>
   </div>
   <div class="wrapper">
@@ -382,28 +564,33 @@ a:hover {
 	  </ul>
     </div>
     <div id="main">
-      <h1>La misma página con diferentes hojas de estilo</h1>
-	  <p>
-		Esto es una demostración de como diferentes hojas de estilo pueden cambiar la apariencia de nuestra página HTML. Tu puedes cambiar el estilo de esta página seleccionando las diferentes hojas de estilo del menú o seleccionando los link siguientes: <br>
+      <h2>Priscila García Moreno</h2>
+	  <table style="padding: 10px; border-spacing: 15px 2px;">
+	  <tr><td><a href="https://ticlandiaymas.wordpress.com/" target="blank"> 
+	  <img class="marco" src="https://lh5.googleusercontent.com/zxbxDOVb6R1713-LHhGZaF3dg72UmBfb91jqez-We-4jOMi4y-7vHRmc-jWjYFU3h46QzK9OghW8sTm27vtOkwVzfkVobR5XAyA=w1366-h625-nu-rw-e365" style="height: 200px; width: 300px"> </a></td>
+	  <td>Esto es una demostración de como diferentes hojas de estilo pueden cambiar la apariencia de nuestra página HTML. Tu puedes cambiar el estilo de esta página seleccionando las diferentes hojas de estilo del menú o seleccionando los link siguientes: <br>
 		<a href="#" onclick="reStyle(0);return false">Hoja de estilo 1</a>,
 		<a href="#" onclick="reStyle(1);return false">Hoja de estilo 2</a>,
 		<a href="#" onclick="reStyle(2);return false">Hoja de estilo 3</a>,
 		<a href="#" onclick="reStyle(3);return false">Hoja de estilo 4</a>.
-	  </p>
-       <h2>No Styles</h2>
+	  
+	  </td></tr>
+	  </table>
+       <div class="parrafo">
+	   <h2>No Styles</h2>
 	  <p>
 		Esta página usa DIV para estructuras las secciones. Haz clic para ver la página sin estilo ni CSS vinculada:<br><a href="#" onclick="noStyles();return false">No Stylesheet</a>.
-	  </p>
+	  </p><br><br>
+	  </div>
    </div>
     <div id="sidebar">
-      <h3>Side-Bar</h3>
-	  <p>
-		Ejemplo de demo que lograrás realizar al finalizar el tema.
-	  </p>
-    </div>
-    
-    
-  
+     
+<a href="https://ticlandiaymas.wordpress.com/" target="blank"> </a> 
+<a href="https://twitter.com/@prixilak" class="button" target="blank" >Twitter</a>
+<a href="https://www.facebook.com/Ticlandia-101921334567091/?modal=admin_todo_tour" class="button" target="blank">Facebook</a>
+<a href="https://ticlandiaymas.wordpress.com/" class="button" target="blank">Mi blog</a>
+<img id="imagen" src="https://lh4.googleusercontent.com/CC4jwOTHdhKRm_KyIQGYrZhAsYf6ff0gC5ElrJC6Rodjesma4a8653dNHJ-X5eL11a_Mn0-x_VADvCezrI2eF3EauiPn1aXNHg=w1366-h625-nu-rw-e365">
+</div>
 
   </div>  
   
@@ -453,4 +640,3 @@ reStyle(0);
 </script>
 </body>
 </html>
-
