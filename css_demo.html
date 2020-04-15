@@ -1,456 +1,459 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-<title>hola</title>
-<meta charset="UTF-8">
-<style>/* Stylesheet 1: */
-body {
-    font: 100% Lucida Sans, Verdana;
-    margin: 20px;
-    line-height: 26px;
+<! DOCTYPE html >
+< html  lang = " es " >
+< cabeza >
+< título > hola </ título >
+< meta  charset = " UTF-8 " >
+< estilo > / * Hoja de estilo 1: * /
+cuerpo {
+    fuente : 100 % Lucida Sans , Verdana;
+    margen : 20 px ;
+    altura de línea : 26 px ;
 }
 
-.container {
-    xmin-width: 900px;
+. contenedor {
+    ancho xmin : 900 px ;
 }
 
-.wrapper {
-    position: relative;
-    overflow: auto;
+. envoltorio {
+    posición : relativa;
+    desbordamiento : auto;
 }
 
-#top, #sidebar, #bottom, .menuitem {
-    border-radius: 4px;
-    margin: 4px;
+# Superior ,  # barra lateral ,  # inferior , . menuitem {
+    radio de borde : 4 px ;
+    margen : 4 px ;
 }
 
-#top {
-    background-color: #4CAF50;
-    color: #ffffff;
-    padding: 15px;
+# top {
+    color de fondo : # 4CAF50 ;
+    color : # ffffff ;
+    acolchado : 15 px ;
 }
 
-#menubar {
-    width: 200px;
-    float: left
+# barra de menú {
+    ancho : 200 px ;
+    flotador : izquierda
 }
 
-#main {
-    padding: 10px;
-    margin: 0 210px;
+# main {
+    relleno : 10 px ;
+    margen : 0  210 px ;
 }
 
-#sidebar {
-    background-color: #32a4e7;
-    color: #ffffff;
-    padding: 10px;
-    width: 180px;
-    bottom: 0;
-    top: 0;
-    right: 0;
-    position: absolute;
+# barra lateral {
+    color de fondo : # 32a4e7 ;
+    color : # ffffff ;
+    relleno : 10 px ;
+    ancho : 180 px ;
+    abajo : 0 ;
+    arriba : 0 ;
+    derecha : 0 ;
+    posición : absoluta;
 }
 
-#bottom {
-    border: 1px solid #d4d4d4;
-    background-color: #f1f1f1;
-    text-align: center;
-    padding: 10px;
-    font-size: 70%;
-    line-height: 14px;
+# bottom {
+    borde : 1 px sólido # d4d4d4 ;
+    color de fondo : # f1f1f1 ;
+    alinear texto : centro;
+    relleno : 10 px ;
+    tamaño de fuente : 70 % ;
+    altura de línea : 14 px ;
 }
 
-#top h1, #top p, #menulist {
-    margin: 0;
-    padding: 0;
+# top  h1 ,  # top  p ,  # menulist {
+    margen : 0 ;
+    relleno : 0 ;
 }
 
-.menuitem {
-    background-color: #f1f1f1;
-    border: 1px solid #d4d4d4;
-    list-style-type: none;
-    padding: 2px;
-    cursor: pointer;
+. menuitem {
+    color de fondo : # f1f1f1 ;
+    borde : 1 px sólido # d4d4d4 ;
+    list-style-type : ninguno;
+    relleno : 2 px ;
+    cursor : puntero;
 }
 
-.menuitem:hover {
-    background-color: #ffffff;
+. menuitem : hover {
+    color de fondo : # ffffff ;
 }
 
-.menuitem:first-child {
-    background-color:#4CAF50;
-	color: white;
-	font-weight:bold;
+. menuitem : primer hijo {
+    color de fondo : # 4CAF50 ;
+	color : blanco;
+	peso de fuente : negrita;
 }
 
-a {
-    color: #000000;
-    text-decoration: underline;
+un {
+    color : # 000000 ;
+    decoración de texto : subrayado;
 }
 
-a:hover {
-    text-decoration: none;
+a : desplazarse {
+    decoración de texto : ninguno;
 }
 
 
-@media (max-width: 800px) {
-    #sidebar {
-        width: auto;
-        position: relative;
+@media ( ancho máximo : 800 px ) {
+    # barra lateral {
+        ancho : auto;
+        posición : relativa;
     } 
-    #main {
-        margin-right: 0;
+    # main {
+        margen derecho : 0 ;
     }    
        
 }
 
-@media (max-width: 600px) {
-    #menubar {
-        width: auto;
-        float: none;
+@media ( ancho máximo : 600 px ) {
+    # barra de menú {
+        ancho : auto;
+        flotador : ninguno;
     }
-    #main {
-        margin: 0;
+    # main {
+        margen : 0 ;
     }    
 }
-</style>
+</ estilo >
 
-<style>/* Stylesheet 2: */
-body {
-    font-family: Arial;
-    background-color: #d14836;
-    line-height: 20px;
-}
-
-.container {
-    xmin-width: 900px;
+< estilo > / * Hoja de estilo 2: * /
+cuerpo {
+    Familia tipográfica : Arial;
+    color de fondo : # d14836 ;
+    altura de línea : 20 px ;
 }
 
-.wrapper {
-    position: relative;
-    overflow: auto;
+. contenedor {
+    ancho xmin : 900 px ;
 }
 
-#top {
-    color: #ffffff;
-    padding: 15px;
-    font-size: 30px;
-    line-height: 26px;    
+. envoltorio {
+    posición : relativa;
+    desbordamiento : auto;
 }
 
-#top h1 {
-    margin:0;
-    line-height: 50px;
+# top {
+    color : # ffffff ;
+    acolchado : 15 px ;
+    tamaño de fuente : 30 px ;
+    altura de línea : 26 px ;    
 }
 
-#menubar {
-    width: 190px;
-    float: right;
+# top  h1 {
+    margen : 0 ;
+    altura de línea : 50 px ;
 }
 
-#main {
-    padding: 10px;
-    background-color: #ffffff;
-    font: 80% Verdana;
+# barra de menú {
+    ancho : 190 px ;
+    flotador : derecho;
 }
 
-#main h1, #main h2 {
-    color: #d14836;
+# main {
+    relleno : 10 px ;
+    color de fondo : # ffffff ;
+    fuente : 80 % Verdana;
 }
 
-#sidebar {
-    background-color: #F6DAD7;
-    color: #d14836;
-    padding: 10px;
+# main  h1 ,  # main  h2 {
+    color : # d14836 ;
 }
 
-#bottom {
-    text-align: center;
-    padding: 10px;
-    font-size: 70%;
-    color: #ffffff;
+# barra lateral {
+    color de fondo : # F6DAD7 ;
+    color : # d14836 ;
+    relleno : 10 px ;
 }
 
-#menulist {
-    padding:0;
-    font: 16px verdana;
+# bottom {
+    alinear texto : centro;
+    relleno : 10 px ;
+    tamaño de fuente : 70 % ;
+    color : # ffffff ;
 }
 
-.menuitem {
-    width: 155px;
-    background-color: #d14836;
-    border: 1px solid #d14836;
-    border-radius: 40px;
-    color: #ffffff;
-    list-style-type: none;
-    margin: 10px;
-    padding: 5px;
-    text-align: center;
-    cursor: pointer;
+# menulista {
+    relleno : 0 ;
+    fuente : 16 px verdana;
 }
 
-.menuitem:nth-child(2) {
-    background-color:white;
-	color: #d14836;
-	font-weight:bold;
+. menuitem {
+    ancho : 155 px ;
+    color de fondo : # d14836 ;
+    borde : 1 px sólido # d14836 ;
+    radio de borde : 40 px ;
+    color : # ffffff ;
+    list-style-type : ninguno;
+    margen : 10 px ;
+    relleno : 5 px ;
+    alinear texto : centro;
+    cursor : puntero;
 }
 
-.menuitem:hover {
-    background-color: #ffffff;
-    color: #d14836;
+. menuitem : nth-child ( 2 ) {
+    color de fondo : blanco;
+	color : # d14836 ;
+	peso de fuente : negrita;
 }
 
-a {
-    color: #d14836;
-    text-decoration: none;
+. menuitem : hover {
+    color de fondo : # ffffff ;
+    color : # d14836 ;
 }
 
-a:hover {
-    text-decoration: underline;
-}
-</style>
-
-<style>/* Stylesheet 3: */
-body {
-    font: 100% Verdana;
-    margin: 20px;
-    line-height: 26px;
+un {
+    color : # d14836 ;
+    decoración de texto : ninguno;
 }
 
-.container {
-    xmin-width: 900px;
+a : desplazarse {
+    decoración de texto : subrayado;
+}
+</ estilo >
+
+< estilo > / * Hoja de estilo 3: * /
+cuerpo {
+    fuente : 100 % Verdana;
+    margen : 20 px ;
+    altura de línea : 26 px ;
 }
 
-.wrapper {
-    position: relative;
-    overflow: auto;
+. contenedor {
+    ancho xmin : 900 px ;
 }
 
-#sidebar {
-    background-color: #f1f1f1;
-    border: 1px solid #d4d4d4;
-    padding-left: 10px;
+. envoltorio {
+    posición : relativa;
+    desbordamiento : auto;
 }
 
-#bottom {
-    text-align: center;
-    padding: 10px;
-    font-size: 70%;
-    line-height: 14px;
+# barra lateral {
+    color de fondo : # f1f1f1 ;
+    borde : 1 px sólido # d4d4d4 ;
+    relleno-izquierda : 10 px ;
 }
 
-h1, h2, h3 {
-    color: #84c754;
+# bottom {
+    alinear texto : centro;
+    relleno : 10 px ;
+    tamaño de fuente : 70 % ;
+    altura de línea : 14 px ;
 }
 
-#menulist {
-    padding: 0;
-    position: relative;
-    overflow: auto;
+h1 ,  h2 ,  h3 {
+    color : # 84c754 ;
 }
 
-.menuitem {
-    width: 165px;
-    float: left;
-    background-color: #555555;
-    color: #ffffff;
-    list-style-type: none;
-    margin: 4px;
-    padding: 2px;
-    text-align: center;
-    cursor: pointer;
+# menulista {
+    relleno : 0 ;
+    posición : relativa;
+    desbordamiento : auto;
 }
 
-.menuitem:nth-child(3) {
-    background-color:#000;
-	font-weight:bold;
+. menuitem {
+    ancho : 165 px ;
+    flotador : izquierda;
+    color de fondo : # 555555 ;
+    color : # ffffff ;
+    list-style-type : ninguno;
+    margen : 4 px ;
+    relleno : 2 px ;
+    alinear texto : centro;
+    cursor : puntero;
 }
 
-.menuitem:hover {
-    background-color: #999999;
+. menuitem : nth-child ( 3 ) {
+    color de fondo : # 000 ;
+	peso de fuente : negrita;
 }
 
-a {
-    color: #000000;
+. menuitem : hover {
+    color de fondo : # 999999 ;
 }
 
-a:hover {
-    color: #84c754;
-}
-</style>
-<style>/* Stylesheet 4: */
-body {
-    font: 100% Courier New;
-    margin: 20px;
-    line-height: 26px;
-    background-color: #000000;
+un {
+    color : # 000000 ;
 }
 
-.container {
-    xmin-width: 900px;
+a : desplazarse {
+    color : # 84c754 ;
+}
+</ estilo >
+< estilo > / * Hoja de estilo 4: * /
+cuerpo {
+    fuente : 100 % Courier New;
+    margen : 20 px ;
+    altura de línea : 26 px ;
+    color de fondo : # 000000 ;
 }
 
-.wrapper {
-    position: relative;
-    overflow: auto;
+. contenedor {
+    ancho xmin : 900 px ;
 }
 
-#top {
-    color: #84c754;
-    padding: 15px;
+. envoltorio {
+    posición : relativa;
+    desbordamiento : auto;
 }
 
-#main {
-    padding: 10px;
-    color: #84c754;
+# top {
+    color : # 84c754 ;
+    acolchado : 15 px ;
 }
 
-#sidebar {
-    color: #ffffff;
-    border: 1px solid #ffffff;
-    border-radius: 4px;
-    padding: 10px;
-    width: 320px;
-    top: 0;
-    right: 0;
-    position: absolute;
-    font-size: 80%;
-    line-height: 20px;
+# main {
+    relleno : 10 px ;
+    color : # 84c754 ;
 }
 
-#bottom {
-    border: 1px solid #ffffff;
-    border-radius: 4px;
-    color: #ffffff;
-    text-align: center;
-    padding: 10px;
-    font-size: 70%;
-    line-height: 14px;
+# barra lateral {
+    color : # ffffff ;
+    borde : 1 px sólido # ffffff ;
+    radio de borde : 4 px ;
+    relleno : 10 px ;
+    ancho : 320 px ;
+    arriba : 0 ;
+    derecha : 0 ;
+    posición : absoluta;
+    tamaño de fuente : 80 % ;
+    altura de línea : 20 px ;
 }
 
-#top h1,#top p {
-    margin: 0;
+# bottom {
+    borde : 1 px sólido # ffffff ;
+    radio de borde : 4 px ;
+    color : # ffffff ;
+    alinear texto : centro;
+    relleno : 10 px ;
+    tamaño de fuente : 70 % ;
+    altura de línea : 14 px ;
 }
 
-.menuitem {
-    color: #84c754;
-    cursor: pointer;
+# top  h1 , # top  p {
+    margen : 0 ;
 }
 
-.menuitem:nth-child(4) {
-	color:white;
-	font-weight:bold;
+. menuitem {
+    color : # 84c754 ;
+    cursor : puntero;
 }
 
-.menuitem:hover {
-    color: #ffffff;
+. menuitem : nth-child ( 4 ) {
+	color : blanco;
+	peso de fuente : negrita;
 }
 
-a {
-    color: #ffffff;
+. menuitem : hover {
+    color : # ffffff ;
 }
 
-a:hover {
-    color: #84c754;
+un {
+    color : # ffffff ;
 }
-@media (max-width: 600px) {
-    #sidebar {
-        width: auto;
-        margin-bottom:10px;        
-        position: relative;
+
+a : desplazarse {
+    color : # 84c754 ;
+}
+@media ( ancho máximo : 600 px ) {
+    # barra lateral {
+        ancho : auto;
+        margen inferior : 10 px ;        
+        posición : relativa;
     }    
 }
 
-</style>
+</ estilo >
 
 
-<body>
+< cuerpo >
 
-<div class="container wrapper">
-  <div id="top">
-    <h1>Bievenido a la página demostración IEDA</h1>
-	<p>Usa el menú para seleccionar las distintas hojas de estilo</p>
-  </div>
-  <div class="wrapper">
-    <div id="menubar">
-	  <ul id="menulist">
-		<li class="menuitem" onclick="reStyle(0)">Hoja de estilo 1
-		<li class="menuitem" onclick="reStyle(1)">Hoja de estilo 2
-		<li class="menuitem" onclick="reStyle(2)">Hoja de estilo 3
-		<li class="menuitem" onclick="reStyle(3)">Hoja de estilo 4
-		<li class="menuitem" onclick="noStyles()">Sin hoja de estilo
-	  </ul>
-    </div>
-    <div id="main">
-      <h1>La misma página con diferentes hojas de estilo</h1>
-	  <p>
-		Esto es una demostración de como diferentes hojas de estilo pueden cambiar la apariencia de nuestra página HTML. Tu puedes cambiar el estilo de esta página seleccionando las diferentes hojas de estilo del menú o seleccionando los link siguientes: <br>
-		<a href="#" onclick="reStyle(0);return false">Hoja de estilo 1</a>,
-		<a href="#" onclick="reStyle(1);return false">Hoja de estilo 2</a>,
-		<a href="#" onclick="reStyle(2);return false">Hoja de estilo 3</a>,
-		<a href="#" onclick="reStyle(3);return false">Hoja de estilo 4</a>.
-	  </p>
-       <h2>No Styles</h2>
-	  <p>
-		Esta página usa DIV para estructuras las secciones. Haz clic para ver la página sin estilo ni CSS vinculada:<br><a href="#" onclick="noStyles();return false">No Stylesheet</a>.
-	  </p>
-   </div>
-    <div id="sidebar">
-      <h3>Side-Bar</h3>
-	  <p>
-		Ejemplo de demo que lograrás realizar al finalizar el tema.
-	  </p>
-    </div>
+< div  class = " contenedor contenedor " >
+  < div  id = " top " >
+    < h1 > HOLA SOY NACHO 😎😎🤑🤑👽👽 </ h1 >
+	< p > Bienvenidos a mi página web </ p >
+  </ div >
+  < div  class = " wrapper " >
+    < div  id = " barra de menú " >
+	  < ul  id = " menulista " >
+		< li  class = " menuitem " onclick = " reStyle (0) " > Hoja de estilo 1
+		< li  class = " menuitem " onclick = " reStyle (1) " > Hoja de estilo 2
+		< li  class = " menuitem " onclick = " reStyle (2) " > Hoja de estilo 3
+		< li  class = " menuitem " onclick = " reStyle (3) " > Hoja de estilo 4
+		< li  class = " menuitem " onclick = " noStyles () " > Sin hoja de estilo
+	  </ ul >
+    </ div >
+    < div  id = " main " >
+      < h1 > Mi nombre es Ignacio Navarro García </ h1 >
+	  < p >
+		Buenas, soy un alumno de Ieda de Bachillerto, actualmente estoy estudiando 2º. TENGO 18 años, y en los Siguientes enlaces tendras Distintos Estilos de Ver Mi Página Web, Asi Como Mi twitter: < br >
+		< Un  href = " # " onclick =" RESTYLE (0); return false " > Estilo verde </ una > ,
+		< Un  href = " # " onclick =" RESTYLE (1); return false " > Estilo rojo </ una > ,
+		< Un  href = " # " onclick =" RESTYLE (2); return false " > Estilo blanco </ a > ,
+		< Un  href = " # " onclick =" RESTYLE (3); return false " > Estilo negro </ una > ,
+        < Un  href = " https://twitter.com/BloggNacho " > < img  src =" img / twitter.png " alt =" # " > </ a > .
+
+	  </ p >
+       < h2 > Sin estilos </ h2 >
+	  < p >
+		Esta página usa DIV para estructuras las secciones. Haz Clic para ver La Sin page Estilo Vinculada CSS ni: < br > < un  href = " # " onclick =" noStyles (); return false " > n de estilo </ a > .
+	  </ p >
+        < h2 > Este soy yo </ h2 >
+        < img  src = " img / Yo.jpg " alt = " Ignacio Navarro García " />
+    </ div >
+    < div  id = " barra lateral " >
+      < h3 > Aficiones </ h3 >
+	  < p >
+		Me gusta el futbol, ​​la mecánica y el tenis.
+	  </ p >
+    </ div >
     
     
   
 
-  </div>  
+  </ div >  
   
   
-  <div id="bottom">
-	El estilo  y apariencia de un sito web es fundamental hoy en día. En este tema aprederemos la importancia de crear un diseño apropiado a cada página web.
-  </div>
-</div>
+  < div  id = " bottom " >
+	El estilo y la apariencia de un sitio web es fundamental hoy en día. En este tema aprendo la importancia de crear un diseño apropiado para cada página web.
+  </ div >
+</ div >
 
-<script>
-function noStyles() {
-	document.styleSheets[0].disabled = true;
-	document.styleSheets[1].disabled = true;
-	document.styleSheets[2].disabled = true;
-	document.styleSheets[3].disabled = true;
+< guión >
+función  noStyles ( )  {
+	documento . hojas de estilo [ 0 ] . deshabilitado  =  verdadero ;
+	documento . hojas de estilo [ 1 ] . deshabilitado  =  verdadero ;
+	documento . hojas de estilo [ 2 ] . deshabilitado  =  verdadero ;
+	documento . hojas de estilo [ 3 ] . deshabilitado  =  verdadero ;
 }
 
-function reStyle(n) {
-    noStyles()
-	document.styleSheets[n].disabled = false;
+función  reStyle ( n )  {
+    noStyles ( )
+	documento . hojas de estilo [ n ] . deshabilitado  =  falso ;
 }
 
-function closeBlackdiv() {
-	var blackdiv, stylediv;
-	blackdiv = document.getElementById("blackdiv")
-	blackdiv.parentNode.removeChild(blackdiv);
-	stylediv = document.getElementById("stylediv")
-	stylediv.parentNode.removeChild(stylediv);
+función  closeBlackdiv ( )  {
+	var  blackdiv ,  stylediv ;
+	blackdiv  =  documento . getElementById ( "blackdiv" )
+	blackdiv . parentNode . removeChild ( blackdiv ) ;
+	stylediv  =  documento . getElementById ( "stylediv" )
+	stylediv . parentNode . removeChild ( stylediv ) ;
 }
 
-function showStyle(n) {
-var div, text, blackdiv;
-blackdiv = document.createElement("DIV");
-blackdiv.setAttribute("style","background-color:#000000;position:absolute;width:100%;height:100%;top:0;opacity:0.5;margin-left:-20px;");
-blackdiv.setAttribute("id","blackdiv");
-blackdiv.setAttribute("onclick","closeBlackdiv()");
-document.body.appendChild(blackdiv);
-div = document.createElement("DIV");
-div.setAttribute("id","stylediv");
-div.setAttribute("style","background-color:#ffffff;padding-left:5px;position:absolute;width:auto;height:auto;top:100px;bottom:50px;left:200px;right:200px;overflow:auto;font-family: monospace; white-space: pre;line-height:16px;");
-text = document.createTextNode(document.getElementsByTagName("STYLE")[n].innerHTML);
-div.appendChild(text);
-document.body.appendChild(div);
-//alert(document.getElementsByTagName("STYLE")[n].innerHTML);
+función  showStyle ( n )  {
+var  div ,  texto ,  blackdiv ;
+blackdiv  =  documento . createElement ( "DIV" ) ;
+blackdiv . setAttribute ( "style" , "background-color: # 000000; position: absolute; width: 100%; height: 100%; top: 0; opacity: 0.5; margin-left: -20px;" ) ;
+blackdiv . setAttribute ( "id" , "blackdiv" ) ;
+blackdiv . setAttribute ( "onclick" , "closeBlackdiv ()" ) ;
+documento . cuerpo . appendChild ( blackdiv ) ;
+div  =  documento . createElement ( "DIV" ) ;
+div . setAttribute ( "id" , "stylediv" ) ;
+div . setAttribute ( "style" , "background-color: #ffffff; padding-left: 5px; position: absolute; width: auto; height: auto; top: 100px; bottom: 50px; left: 200px; right: 200px; overflow: auto; font-family: monospace; white-space: pre; line-height: 16px; " ) ;
+texto  =  documento . createTextNode ( document . getElementsByTagName ( "STYLE" ) [ n ] . innerHTML ) ;
+div . appendChild ( texto ) ;
+documento . cuerpo . appendChild ( div ) ;
+//alert(document.getElementsByTagName("STYLE")[nfont>.innerHTML);
 }
-reStyle(0);
-</script>
-</body>
-</html>
-
+reStyle ( 0 ) ;
+</ script >
+</ cuerpo >
+</ html >
